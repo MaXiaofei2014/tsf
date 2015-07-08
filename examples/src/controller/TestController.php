@@ -40,8 +40,7 @@ class TestController extends Controller{
 		}
 	}
 	
-		public function actionMutical(){
-
+	public function actionMutical(){
 		$response = $this ->argv['response'];
 		$ip = '127.0.0.1';
 		$data = 'test';
@@ -53,9 +52,7 @@ class TestController extends Controller{
 		$calls ->request($secondReq,'second');             //second request
 		$ret=(yield $calls);
 		$response ->end(" test response ");
-
 	}
-
 
 	public function actionTest(){
 		$response = $this ->argv['response'];
